@@ -1,102 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranjan Mishra - Portfolio</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; color: #333; scroll-behavior: smooth; }
-        header { background: linear-gradient(120deg, #1a73e8, #0d47a1); color: white; padding: 40px 20px; text-align: center; position: sticky; top: 0; z-index: 1000; }
-        header h1 { font-size: 2.5rem; }
-        header p { font-size: 1.2rem; margin-top: 10px; }
-        nav { margin-top: 20px; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; transition: color 0.3s; }
-        nav a:hover { color: #ffd54f; }
-        .resume-btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #ffd54f; color: #0d47a1; font-weight: bold; border-radius: 5px; text-decoration: none; transition: 0.3s; }
-        .resume-btn:hover { background-color: #ffca28; }
-        section { max-width: 1000px; margin: auto; padding: 40px 20px; background: white; margin-top: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out; }
-        section.visible { opacity: 1; transform: translateY(0); }
-        h2 { margin-bottom: 15px; color: #1a73e8; border-bottom: 2px solid #eee; padding-bottom: 5px; }
-        ul { list-style: none; }
-        ul li { margin-bottom: 10px; }
-        a { color: #1a73e8; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        footer { text-align: center; background: #0d47a1; color: white; padding: 15px; margin-top: 40px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ranjan Mishra - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-
-<header>
-    <h1>Ranjan Mishra</h1>
-    <p>Senior Software Engineer | Java Backend | Spring Boot | Microservices | AWS</p>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#" class="logo">Ranjan Mishra</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn resume" href="resume.html" target="_blank" rel="noopener">View Resume</a></li>
+      </ul>
     </nav>
-    <a href="resume.html" class="resume-btn" target="_blank">View Resume</a>
-</header>
+  </header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>I am a Senior Software Engineer with 5+ years of experience in Java backend development, specializing in Spring Boot, Microservices, REST APIs, and cloud-native solutions. Passionate about building scalable, high-performance systems for the Banking and FinTech sectors.</p>
-</section>
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1>Hello, I'm <span>Ranjan</span></h1>
+        <p>Senior Software Engineer | Java Backend | Spring Boot | Microservices | AWS</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Contact Me</a>
+          <a class="btn ghost" href="resume.html" target="_blank" rel="noopener">View Resume</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="images/profile.jpg" alt="Ranjan Mishra portrait" class="profile"/>
+      </div>
+    </div>
+  </section>
 
-<section id="skills">
-    <h2>Core Skills</h2>
-    <ul>
-        <li>Java • Spring Boot • Microservices • REST APIs • MySQL</li>
-        <li>AWS • Docker • Kubernetes • Kafka • Redis</li>
-        <li>Git • Jenkins • CI/CD • JIRA • Postman • Agile Development</li>
-    </ul>
-</section>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a Senior Software Engineer with 5+ years of experience in Java backend development, specializing in Spring Boot,
+      Microservices, REST APIs, and cloud-native solutions. Passionate about building scalable, high-performance systems for the Banking and FinTech sectors.</p>
+    </div>
+  </section>
 
-<section id="experience">
-    <h2>Experience</h2>
-    <h3>Senior Software Engineer – Impetus India Pvt. Ltd. (Mar 2024 – Present)</h3>
-    <ul>
-        <li>Built scalable microservices with Java 17, Spring Boot, REST APIs.</li>
-        <li>Implemented AWS, Docker, Kubernetes solutions.</li>
-        <li>Created Kafka streaming pipelines for financial workflows.</li>
-    </ul>
-    <br>
-    <h3>Software Engineer – AppEnsure Inc. (Aug 2020 – Mar 2024)</h3>
-    <ul>
-        <li>Developed backend services for blockchain-based FinTech applications.</li>
-        <li>Optimized MySQL queries for 25% faster execution.</li>
-        <li>Integrated Kafka for real-time communication.</li>
-    </ul>
-</section>
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Core Skills</h2>
+      <ul class="chip-list">
+        <li class="chip">Java</li><li class="chip">Spring Boot</li><li class="chip">Microservices</li><li class="chip">REST APIs</li>
+        <li class="chip">MySQL</li><li class="chip">AWS</li><li class="chip">Docker</li><li class="chip">Kubernetes</li>
+        <li class="chip">Kafka</li><li class="chip">Redis</li><li class="chip">Git</li><li class="chip">Jenkins</li>
+        <li class="chip">CI/CD</li><li class="chip">JIRA</li><li class="chip">Postman</li><li class="chip">Agile</li>
+      </ul>
+    </div>
+  </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <ul>
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="card reveal">
+          <h3>Senior Software Engineer – Impetus India Pvt. Ltd. <span>(Mar 2024 – Present)</span></h3>
+          <ul>
+            <li>Built scalable microservices with Java 17, Spring Boot, REST APIs.</li>
+            <li>Implemented AWS, Docker, Kubernetes solutions.</li>
+            <li>Created Kafka streaming pipelines for financial workflows.</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3>Software Engineer – AppEnsure Inc. <span>(Aug 2020 – Mar 2024)</span></h3>
+          <ul>
+            <li>Developed backend services for blockchain-based FinTech applications.</li>
+            <li>Optimized MySQL queries for 25% faster execution.</li>
+            <li>Integrated Kafka for real-time communication.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <ul class="contact-list">
         <li>📍 Hyderabad, Telangana</li>
         <li>📧 <a href="mailto:ranjanmishra727@gmail.com">ranjanmishra727@gmail.com</a></li>
         <li>📞 9097254693</li>
-        <li>🔗 <a href="https://www.linkedin.com/in/ranjan-mishra-52268915b" target="_blank">LinkedIn</a></li>
-        <li>💻 <a href="https://github.com/Mishra1796" target="_blank">GitHub</a></li>
-    </ul>
-</section>
+        <li>🔗 <a href="https://www.linkedin.com/in/ranjan-mishra-52268915b" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li>💻 <a href="https://github.com/Mishra1796" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </section>
 
-<footer>
-    &copy; 2025 Ranjan Mishra. All rights reserved.
-</footer>
-
-<script>
-    const sections = document.querySelectorAll("section");
-    window.addEventListener("scroll", () => {
-        const triggerBottom = window.innerHeight * 0.85;
-        sections.forEach(section => {
-            const sectionTop = section.getBoundingClientRect().top;
-            if(sectionTop < triggerBottom){
-                section.classList.add("visible");
-            }
-        });
-    });
-</script>
-
+  <footer class="site-footer">
+    <div class="container"><p>© 2025 Ranjan Mishra. All rights reserved.</p></div>
+  </footer>
 </body>
 </html>
